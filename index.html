@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <div class="form-container">
+    <h1 class="form-title">Login</h1>
+    <form class="login-form" autocomplete="off">
+      <div class="form-group">
+        <input type="text" id="username" name="username" placeholder="..." required
+          pattern="^(?=[a-zA-Z0-9._]{8,20}$)(?!.*[_.]{2})[^_.].*[^_.]$" />
+        <img src="./images/user.svg" alt="user icon" width="16" height="16" />
+        <label for="username">Username</label>
+        <span class="input-line"></span>
+        <span class="input-error">Username invalid</span>
+      </div>
+      <div class="form-group">
+        <input type="password" id="password" name="password" placeholder="..." required
+          pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[#$@!%&*?])[A-Za-z\d#$@!%&*?]{8,30}$" />
+        <img src="./images/padlock.svg" alt="padlock icon" width="16" height="16" />
+        <label for="password">Password</label>
+        <span class="input-line"></span>
+        <span class="input-error">Password invalid</span>
+      </div>
+      <a href="#" class="link text-right">Forgot password?</a>
+      <button class="btn-submit" type="submit"><span>Login</span></button>
+    </form>
+    <a href="#" class="link text-center">Or Sign Up</a>
+  </div>
+</body>
+
+</html>
